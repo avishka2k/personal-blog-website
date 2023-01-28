@@ -9,6 +9,9 @@ module.exports = {
       'gray': '#BABCC1',
       'white': '#F5F5F7',
     },
+    fontFamily: {
+      comicsans: ['ComicSans'],
+    },
     extend: {},
   },
   plugins: [],

@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        @apply bg-bg-color;
+        @apply text-gray;
+        @apply font-comicsans;
+    }
+}
+
+@font-face {
+    font-family: 'ComicSans';
+    src: local('ComicSans'), url('./fonts/ComicSans.ttf') format('truetype');
+}
