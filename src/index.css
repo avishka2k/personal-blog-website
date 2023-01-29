@@ -14,3 +14,10 @@
     font-family: 'ComicSans';
     src: local('ComicSans'), url('./fonts/ComicSans.ttf') format('truetype');
 }
+
+.sticky-my {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4;
+    height: 30rem;
+}

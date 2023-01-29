@@ -1,15 +1,32 @@
 import React from "react";
+import Rnimg from "../images/rn-img.jpg";
+import RecentPost from "../components/RecentPost";
 
-function RecentPostCard(props) {
+function RecentPostCard() {
   return (
-    <div className="flex flex-row gap-3 my-2">
-      <img src={props.img} className="w-[4rem] h-[4rem] rounded-[4px]" alt="" />
-      <div className="flex flex-col justify-between">
-        <p className=" leading-4">
-          {props.title}
-        </p>
-        <p className=" text-[11px]">{props.date}</p>
-      </div>
+    <div className="flex flex-col rounded-[5px] bg-card-color shadow-md h-max w-full p-5">
+      <h1 className=" font-bold text-xl">Recent Posts</h1>
+      <div className="w-[7rem] h-[3px] rounded-lg bg-pink mt-1 mb-4" />
+      <RecentPost
+        img={Rnimg}
+        title="This is my recent img blog in this web page"
+        date="February 23, 2022"
+      />
+      <RecentPost
+        img={Rnimg}
+        title="This is my recent img blog in this web page"
+        date="February 23, 2022"
+      />
+      <RecentPost
+        img={Rnimg}
+        title="This is my recent img blog in this web page"
+        date="February 23, 2022"
+      />
+      <RecentPost
+        img={Rnimg}
+        title="This is my recent img blog in this web page"
+        date="February 23, 2022"
+      />
     </div>
   );
 }
